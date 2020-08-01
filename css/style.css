@@ -1,0 +1,58 @@
+body{
+    color: white;
+    padding: 0em;
+    font-family: "Roboto Medium";
+}
+
+/* Formatting for the Timing Tower */
+
+.ttCustomTable{
+    /*opacity: 0.5;*/
+    line-height: .05em;
+    border-radius: .5em;
+}
+
+tbody {
+
+}
+
+#ttBranding{
+    text-align: center;
+}
+
+.timing-dark-color{
+    background-color: rgba(0, 0, 0, 0.75); !important;
+}
+
+/* Colours for all teams */
+.teamTurq{
+    color: #00ddc2;
+}
+.teamRed{
+    color: #ff0f00;
+}
+.teamDarkBlue{
+    color: rgba(49, 98, 255);
+}
+.teamYellow{
+    color: #eaea00;
+}
+.teamOrange{
+    color: #ff7e00;
+}
+.teamWhite{
+    color: white;
+}
+.teamDarkRed{
+    color: #de0000;
+}
+.teamLightBlue{
+    color: rgb(90, 189, 255);
+}
+.teamPink{
+    color: #ff8ac0;
+}
+.teamGold{
+    color: #cea048;
+}
+
