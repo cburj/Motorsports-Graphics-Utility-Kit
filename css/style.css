@@ -12,10 +12,6 @@ body{
     border-radius: .5em;
 }
 
-tbody {
-
-}
-
 #ttBranding{
     text-align: center;
 }
@@ -23,6 +19,22 @@ tbody {
 .timing-dark-color{
     background-color: rgba(0, 0, 0, 0.75); !important;
 }
+
+.ttRank span{
+    background-color: white;
+    color: black;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* Get rid of lap times if the res is too small*/
+/*Screen Width of 180+ will always show lap times*/
+@media only screen and (max-width: 179px) {
+    .lapTimeCollapse{
+        display: none;
+    }
+}
+
 
 /* Colours for all teams */
 .teamTurq{
@@ -55,4 +67,65 @@ tbody {
 .teamGold{
     color: #cea048;
 }
+.teamUnknown{
+    color: #ffffff;
+}
 
+.fastestLapHighlight{
+    background-color: #b900db;
+}
+
+.yellowFlag {
+    animation-name: yellowFlagAnimate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.redFlag {
+    animation-name: redFlagAnimate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.greenFlag {
+    animation-name: greenFlagAnimate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/*CUSTOM FLAG BG ANIMATIONS, ADJUST AS REQ.*/
+@keyframes yellowFlagAnimate {
+    0% {
+        background: #fb3;
+    }
+    50% {
+        background: rgba(255, 187, 51, 0.51);
+    }
+    100% {
+        background: #fb3;
+    }
+}
+
+@keyframes redFlagAnimate {
+    0% {
+        background: #ff3547;
+    }
+    50% {
+        background: rgba(255, 53, 71, 0.51);
+    }
+    100% {
+        background: #ff3547;
+    }
+}
+
+@keyframes greenFlagAnimate {
+    0% {
+        background: #00c851;
+    }
+    50% {
+        background: rgba(0, 200, 81, 0.51);
+    }
+    100% {
+        background: #00c851;
+    }
+}

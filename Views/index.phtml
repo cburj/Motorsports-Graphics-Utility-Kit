@@ -1,8 +1,11 @@
 <?php require('template/header.phtml') ?>
+    <!-- TEMPORARY PAGE REFRESH EVERY X SEONDS -->
+    <!--<meta http-equiv="refresh" content="5">-->
+    <!-- TEMPORARY PAGE REFRESH EVERY X SEONDS -->
 
     <!--MAIN CONTENT-->
                 <!--Main Timing Tower-->
-                <table class="table timing-dark-color white-text ttCustomTable">
+                <table class="table table-borderless timing-dark-color white-text ttCustomTable">
                     <!-- SESSION INFO -->
                     <thead>
                     <!-- Session Name/Laps/Timers -->
@@ -15,119 +18,74 @@
                     <!-- Session Name/Laps/Timers -->
 
                     <!-- Flags/Warnings, only show 1 at a time! -->
-                    <!--<tr class="danger-color">
-                        <th colspan="100%" id="ttBranding">SESSION STOPPED</th>
+                    <!--<tr class="redFlag">
+                        <th colspan="100%" id="ttBranding"><i class="fas fa-flag"></i></th>
                     </tr>-->
-                    <!--<tr class="warning-color">
-                        <th colspan="100%" id="ttBranding">YELLOW FLAG</th>
-                    </tr>-->
-                    <tr class="success-color">
-                        <th colspan="100%" id="ttBranding">GREEN FLAG</th>
+                    <tr class="yellowFlag">
+                        <th colspan="100%" id="ttBranding"><i class="fas fa-flag"></i> SECTOR 1</th>
                     </tr>
+                    <!--<tr class="greenFlag">
+                        <th colspan="100%" id="ttBranding"><i class="fas fa-flag"></i></th>
+                    </tr>-->
+                    <!--<tr class="">
+                        <th colspan="100%" id="ttBranding"><i class="fas fa-flag-checkered"></i></th>
+                    </tr>-->
                     <!-- Flags/Warnings, only show 1 at a time! -->
                     </thead>
                     <!-- SESSION INFO -->
                     <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td class="teamTurq">HAM</td>
-                        <td>1:26.598</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td class="teamTurq">BOT</td>
-                        <td>1:26.598</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td class="teamDarkBlue">VER</td>
-                        <td>1:26.598</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td class="teamRed">LEC</td>
-                        <td>1:26.598</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td class="teamOrange">NOR</td>
-                        <td>1:26.598</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td class="teamPink">STR</td>
-                        <td>1:26.598</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td class="teamOrange">SAI</td>
-                        <td>1:26.598</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td class="teamYellow">RIC</td>
-                        <td>1:26.598</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td class="teamYellow">OCO</td>
-                        <td>1:26.598</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td class="teamRed">VET</td>
-                        <td>1:26.598</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td class="teamWhite">GAS</td>
-                        <td>1:26.598</td>
-                    </tr>
-                    <tr>
-                        <td>12</td>
-                        <td class="teamDarkBlue">ALB</td>
-                        <td>1:26.598</td>
-                    </tr>
-                    <tr>
-                        <td>13</td>
-                        <td class="teamPink">HUL</td>
-                        <td>1:26.598</td>
-                    </tr>
-                    <tr>
-                        <td>14</td>
-                        <td class="teamWhite">KYV</td>
-                        <td>1:26.598</td>
-                    </tr>
-                    <tr>
-                        <td>15</td>
-                        <td class="teamLightBlue">RUS</td>
-                        <td>1:26.598</td>
-                    </tr>
-                    <tr>
-                        <td>16</td>
-                        <td class="teamGold">MAG</td>
-                        <td>1:26.598</td>
-                    </tr>
-                    <tr>
-                        <td>17</td>
-                        <td class="teamDarkRed">GIO</td>
-                        <td>1:26.598</td>
-                    </tr>
-                    <tr>
-                        <td>18</td>
-                        <td class="teamDarkRed">RAI</td>
-                        <td>1:26.598</td>
-                    </tr>
-                    <tr>
-                        <td>19</td>
-                        <td class="teamGold">GRO</td>
-                        <td>1:26.598</td>
-                    </tr>
-                    <tr>
-                        <td>20</td>
-                        <td class="teamLightBlue">LAT</td>
-                        <td>1:26.598</td>
-                    </tr>
+                    <?php
+                    $position = 1;
+                    $teamClass = "teamUnknown";
+                    foreach ($view->driverDataSet as $driverData) {
+                        if($position==1)
+                            echo '<tr class="fastestLapHighlight">';
+                        else
+                            echo '<tr class="">';
+                        echo '<td><span>' . $position .'</span></td>';
+                        /*Get the required team colour - probably a much easier way of doing this? */
+                        /*switch ($driverData->getDriverTeam()) {
+                            case "mercedes":
+                                $teamClass = "teamTurq";
+                                break;
+                            case "redbull":
+                                $teamClass = "teamDarkBlue";
+                                break;
+                            case "ferrari":
+                                $teamClass = "teamRed";
+                                break;
+                            case "alphatauri":
+                                $teamClass = "teamWhite";
+                                break;
+                            case "alfaromeo":
+                                $teamClass = "teamDarkRed";
+                                break;
+                            case "mclaren":
+                                $teamClass = "teamOrange";
+                                break;
+                            case "racingpoint":
+                                $teamClass = "teamPink";
+                                break;
+                            case "williams":
+                                $teamClass = "teamLightBlue";
+                                break;
+                            case "haas":
+                                $teamClass = "teamGold";
+                                break;
+                            case "renault":
+                                $teamClass = "teamYellow";
+                                break;
+                            default:
+                                $teamClass = "teamUnknown";
+                                break;
+                        }*/
+                        /*Get the required team colour - probably a much easier way of doing this? */
+                        echo '<td class="">' . $driverData->getDriverAbv() . '</td>';
+                        echo '<td class="lapTimeCollapse">1:26.598</td>';
+                        echo '</tr>';
+                        $position = $position +1;
+                    }
+                    ?>
                     </tbody>
                 </table>
                 <!--Main Timing Tower-->

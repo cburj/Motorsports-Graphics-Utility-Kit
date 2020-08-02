@@ -1,0 +1,158 @@
+[
+    {
+        "type": "header",
+        "version": "5.0.1",
+        "comment": "Export to JSON plugin for PHPMyAdmin"
+    },
+    {
+        "type": "database",
+        "name": "timingtower"
+    },
+    {
+        "type": "table",
+        "name": "drivers",
+        "database": "timingtower",
+        "data": [
+            {
+                "driver_id": "3",
+                "driver_fname": "Daniel",
+                "driver_lname": "Ricciardo",
+                "driver_abv": "RIC",
+                "driver_team": "renault"
+            },
+            {
+                "driver_id": "4",
+                "driver_fname": "Lando",
+                "driver_lname": "Norris",
+                "driver_abv": "NOR",
+                "driver_team": "mclaren"
+            },
+            {
+                "driver_id": "5",
+                "driver_fname": "Sebastian",
+                "driver_lname": "Vettel",
+                "driver_abv": "VET",
+                "driver_team": "ferrari"
+            },
+            {
+                "driver_id": "6",
+                "driver_fname": "Nicholas",
+                "driver_lname": "Latifi",
+                "driver_abv": "LAT",
+                "driver_team": "williams"
+            },
+            {
+                "driver_id": "7",
+                "driver_fname": "Kimi",
+                "driver_lname": "Räikkönen",
+                "driver_abv": "RAI",
+                "driver_team": "alfaromeo"
+            },
+            {
+                "driver_id": "8",
+                "driver_fname": "Romain",
+                "driver_lname": "Grosjean",
+                "driver_abv": "GRO",
+                "driver_team": "haas"
+            },
+            {
+                "driver_id": "10",
+                "driver_fname": "Pierre",
+                "driver_lname": "Gasly",
+                "driver_abv": "GAS",
+                "driver_team": "alphatauri"
+            },
+            {
+                "driver_id": "11",
+                "driver_fname": "Sergio",
+                "driver_lname": "Pérez",
+                "driver_abv": "PER",
+                "driver_team": "racingpoint"
+            },
+            {
+                "driver_id": "16",
+                "driver_fname": "Charles",
+                "driver_lname": "Leclerc",
+                "driver_abv": "LEC",
+                "driver_team": "ferrari"
+            },
+            {
+                "driver_id": "18",
+                "driver_fname": "Lance",
+                "driver_lname": "Stroll",
+                "driver_abv": "STR",
+                "driver_team": "racingpoint"
+            },
+            {
+                "driver_id": "20",
+                "driver_fname": "Kevin",
+                "driver_lname": "Magnussen",
+                "driver_abv": "MAG",
+                "driver_team": "haas"
+            },
+            {
+                "driver_id": "23",
+                "driver_fname": "Alexander",
+                "driver_lname": "Albon",
+                "driver_abv": "ALB",
+                "driver_team": "redbull"
+            },
+            {
+                "driver_id": "26",
+                "driver_fname": "Daniil",
+                "driver_lname": "Kvyat",
+                "driver_abv": "KYV",
+                "driver_team": "alphatauri"
+            },
+            {
+                "driver_id": "31",
+                "driver_fname": "Esteban",
+                "driver_lname": "Ocon",
+                "driver_abv": "OCO",
+                "driver_team": "renault"
+            },
+            {
+                "driver_id": "33",
+                "driver_fname": "Max",
+                "driver_lname": "Verstappen",
+                "driver_abv": "VER",
+                "driver_team": "redbull"
+            },
+            {
+                "driver_id": "44",
+                "driver_fname": "Lewis",
+                "driver_lname": "Hamilton",
+                "driver_abv": "HAM",
+                "driver_team": "mercedes"
+            },
+            {
+                "driver_id": "55",
+                "driver_fname": "Carlos",
+                "driver_lname": "Sainz",
+                "driver_abv": "SAI",
+                "driver_team": "mclaren"
+            },
+            {
+                "driver_id": "63",
+                "driver_fname": "George",
+                "driver_lname": "Russell",
+                "driver_abv": "RUS",
+                "driver_team": "williams"
+            },
+            {
+                "driver_id": "77",
+                "driver_fname": "Valtteri",
+                "driver_lname": "Bottas",
+                "driver_abv": "BOT",
+                "driver_team": "mercedes"
+            },
+            {
+                "driver_id": "99",
+                "driver_fname": "Antonio ",
+                "driver_lname": "Giovinazzi",
+                "driver_abv": "GIO",
+                "driver_team": "alfaromeo"
+            }
+        ]
+    }
+]

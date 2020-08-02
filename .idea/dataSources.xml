@@ -7,5 +7,11 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1:3306/matgo</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="TIMING TOWER" uuid="c67f6354-a7b3-40f9-976c-8b4020d7d9ef">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/timingtower</jdbc-url>
+    </data-source>
   </component>
 </project>
