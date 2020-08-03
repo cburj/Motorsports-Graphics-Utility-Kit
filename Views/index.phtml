@@ -6,6 +6,11 @@
     <!--MAIN CONTENT-->
                 <!--Main Timing Tower-->
 
+                <?php
+                    /* First time the page loads, we need to get set the last
+                       Db change date/time to now, otherwise data will not load */
+                    $_SESSION['dbChange'] = date('Y-m-d H:i:s');
+                ?>
 
                 <!-- AJAX Script to fresh tower every second -->
                 <!-- Performance wise this is bad as we are requesting the data once a second even if nothing
@@ -16,7 +21,6 @@
                     {
                        setInterval(function () {
                            $("#towerReloadElement").load("towerRefresh.php");
-                           refresh();
                        },1000);
                     });
                 </script>

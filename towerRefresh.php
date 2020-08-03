@@ -1,5 +1,7 @@
 <?php
+session_start();
 require_once('Models/DriverDataSet.php');
+
 
 $view = new stdClass();
 
@@ -10,14 +12,24 @@ $view->driverDataSet = $driverDataSet->fetchAllDrivers();
 $position = 1;
 $teamClass = "teamUnknown";
 
+/* This is the script where we get all of the data for the timing
+   tower. We only return the data if something has changed since
+   the last time we queries the table.*/
+
+
 foreach ($view->driverDataSet as $driverData) {
-    if($position==1)
+    if($position==1){
         echo '<tr class="fastestLapHighlight">';
+    }
     else
         echo '<tr class="">';
     echo '<td><span>' . $position .'</span></td>';
     echo '<td class="">' . $driverData->getDriverAbv() . '</td>';
-    echo '<td class="lapTimeCollapse">1:26.598</td>';
+    /*this needs to be implemented properly at some point, just a placeholder for styling atm*/
+    $rawDateTime = $driverData->getDriverLastupdate();
+    $createDate = new DateTime($rawDateTime);
+    $stripDateTime = $createDate->format('H:i:s');
+    echo '<td class="lapTimeCollapse">' . $stripDateTime . '</td>';
     echo '</tr>';
     $position = $position +1;
 }
