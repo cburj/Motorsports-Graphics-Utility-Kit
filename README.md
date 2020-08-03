@@ -1,11 +1,3 @@
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-<a href="https://github.com/cburj/í">
-    <img src="GitHubLogo.png" alt="Logo" width="600" height="200">
-  </a>
-</p>
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
