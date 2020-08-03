@@ -5,6 +5,24 @@
 
     <!--MAIN CONTENT-->
                 <!--Main Timing Tower-->
+
+
+                <!-- AJAX Script to fresh tower every second -->
+                <!-- Performance wise this is bad as we are requesting the data once a second even if nothing
+                has changed, should be okay for 20 drivers, but the more you add its going to increase cpu time -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script>
+                    $(document).ready(function ()
+                    {
+                       setInterval(function () {
+                           $("#towerReloadElement").load("towerRefresh.php");
+                           refresh();
+                       },1000);
+                    });
+                </script>
+                <!-- AJAX Script to fresh tower every second -->
+
+
                 <table class="table table-borderless timing-dark-color white-text ttCustomTable">
                     <!-- SESSION INFO -->
                     <thead>
@@ -33,59 +51,7 @@
                     <!-- Flags/Warnings, only show 1 at a time! -->
                     </thead>
                     <!-- SESSION INFO -->
-                    <tbody>
-                    <?php
-                    $position = 1;
-                    $teamClass = "teamUnknown";
-                    foreach ($view->driverDataSet as $driverData) {
-                        if($position==1)
-                            echo '<tr class="fastestLapHighlight">';
-                        else
-                            echo '<tr class="">';
-                        echo '<td><span>' . $position .'</span></td>';
-                        /*Get the required team colour - probably a much easier way of doing this? */
-                        /*switch ($driverData->getDriverTeam()) {
-                            case "mercedes":
-                                $teamClass = "teamTurq";
-                                break;
-                            case "redbull":
-                                $teamClass = "teamDarkBlue";
-                                break;
-                            case "ferrari":
-                                $teamClass = "teamRed";
-                                break;
-                            case "alphatauri":
-                                $teamClass = "teamWhite";
-                                break;
-                            case "alfaromeo":
-                                $teamClass = "teamDarkRed";
-                                break;
-                            case "mclaren":
-                                $teamClass = "teamOrange";
-                                break;
-                            case "racingpoint":
-                                $teamClass = "teamPink";
-                                break;
-                            case "williams":
-                                $teamClass = "teamLightBlue";
-                                break;
-                            case "haas":
-                                $teamClass = "teamGold";
-                                break;
-                            case "renault":
-                                $teamClass = "teamYellow";
-                                break;
-                            default:
-                                $teamClass = "teamUnknown";
-                                break;
-                        }*/
-                        /*Get the required team colour - probably a much easier way of doing this? */
-                        echo '<td class="">' . $driverData->getDriverAbv() . '</td>';
-                        echo '<td class="lapTimeCollapse">1:26.598</td>';
-                        echo '</tr>';
-                        $position = $position +1;
-                    }
-                    ?>
+                    <tbody id="towerReloadElement">
                     </tbody>
                 </table>
                 <!--Main Timing Tower-->
