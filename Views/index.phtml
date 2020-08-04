@@ -1,7 +1,4 @@
 <?php require('template/header.phtml') ?>
-    <!-- TEMPORARY PAGE REFRESH EVERY X SEONDS -->
-    <!--<meta http-equiv="refresh" content="5">-->
-    <!-- TEMPORARY PAGE REFRESH EVERY X SEONDS -->
 
     <!--MAIN CONTENT-->
                 <!--Main Timing Tower-->
@@ -24,6 +21,14 @@
                        },1000);
                     });
                 </script>
+                <!--<script>
+                    $(document).ready(function ()
+                    {
+                       setInterval(function () {
+                           $("#flagReloadElement").load("eventRefresh.php");
+                       },1000);
+                    });
+                </script>-->
                 <!-- AJAX Script to fresh tower every second -->
 
 
@@ -37,9 +42,12 @@
                     <tr>
                         <th colspan="100%" id="ttBranding">55/78</th>
                     </tr>
-                    <!-- Session Name/Laps/Timers -->
 
+                    <!-- Session Name/Laps/Timers -->
                     <!-- Flags/Warnings, only show 1 at a time! -->
+                    <div id="flagReloadElement">
+
+                    </div>
                     <!--<tr class="redFlag">
                         <th colspan="100%" id="ttBranding"><i class="fas fa-flag"></i></th>
                     </tr>-->
