@@ -30,19 +30,22 @@ body{
 
 /* Get rid of lap times if the res is too small*/
 /*Screen Width of 200+ will always show lap times*/
-@media only screen and (max-width: 179px) {
+@media only screen and (max-width: 230px) {
     .lapTimeCollapse{
         display: none;
     }
 }
-
 /* Get rid of team colour strips if the screen size falls below a value*/
 @media only screen and (max-width: 115px) {
     .teamColourCollapse{
         display: none;
     }
 }
-
+@media only screen and (max-width: 250px) {
+    .tyreCollapse{
+        display: none;
+    }
+}
 
 /* Colours for all teams */
 .teamTurq{
@@ -81,6 +84,22 @@ body{
 
 .fastestLapHighlight{
     background-color: #b900db;
+}
+
+.tyreS{
+    color: #ff3131;
+}
+.tyreM{
+    color: #ffdd31;
+}
+.tyreH{
+    color: #cdcdcd;
+}
+.tyreI{
+    color: #00a503;
+}
+.tyreW{
+    color: #0f6fb7;
 }
 
 .yellowFlag {

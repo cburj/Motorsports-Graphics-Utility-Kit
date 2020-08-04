@@ -61,6 +61,9 @@ foreach ($view->driverDataSet as $driverData) {
     $createDate = new DateTime($rawDateTime);
     $stripDateTime = $createDate->format('H:i:s');
     echo '<td class="lapTimeCollapse">' . $stripDateTime . '</td>';
+    echo '<td class="tyreCollapse tyre' . $driverData->getDriverTyre() . '">' . $driverData->getDriverTyre() . '</td>';
+    /* Will come back to this once i figure out how to keep the image within the height of the row*/
+    /*echo '<td class="tyreCollapse"><img src="img/tyres/' . $driverData->getDriverTyre() . '.svg"></td>';*/
     echo '</tr>';
     $position = $position +1;
 }

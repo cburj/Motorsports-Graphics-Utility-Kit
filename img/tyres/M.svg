@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="3.96875mm"
+   height="3.96875mm"
+   viewBox="0 0 3.9687501 3.9687501"
+   version="1.1"
+   id="svg940"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="M.svg">
+  <defs
+     id="defs934" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="49.50616"
+     inkscape:cy="33.134439"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <metadata
+     id="metadata937">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-32.978516,-90.798828)">
+    <g
+       id="g1560"
+       transform="matrix(0.16566118,0,0,0.16566118,27.515256,79.068269)">
+      <g
+         id="text821"
+         style="font-weight:800;font-size:10.58333302px;line-height:1.25;font-family:Gilroy;-inkscape-font-specification:'Gilroy Ultra-Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332"
+         aria-label="M">
+        <path
+           id="path1552"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:OPTIEdgarBold-Extended;-inkscape-font-specification:'OPTIEdgarBold-Extended Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.26458332"
+           d="m 37.919674,78.529619 v 8.519583 h 2.582333 v -6.106583 l 3.429,6.106583 h 1.957917 l 3.52425,-6.138333 v 6.138333 h 2.582333 v -8.519583 h -4.148666 l -2.942167,5.450416 -2.942167,-5.450416 z"
+           inkscape:connector-curvature="0" />
+      </g>
+      <path
+         inkscape:connector-curvature="0"
+         id="circle837"
+         d="m 44.957031,70.810547 c -6.59781,0 -11.978515,5.380706 -11.978515,11.978515 0,6.59781 5.380705,11.978516 11.978515,11.978516 6.59781,0 11.978516,-5.380706 11.978516,-11.978516 0,-6.597809 -5.380706,-11.978515 -11.978516,-11.978515 z m 0,3 c 4.97649,0 8.978516,4.002026 8.978516,8.978515 0,4.97649 -4.002026,8.978516 -8.978516,8.978516 -4.976489,0 -8.978515,-4.002026 -8.978515,-8.978516 0,-4.976489 4.002026,-8.978515 8.978515,-8.978515 z"
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#ffce34;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+    </g>
+  </g>
+</svg>
