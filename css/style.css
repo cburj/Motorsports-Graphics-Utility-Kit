@@ -1,7 +1,8 @@
 body{
     color: white;
     padding: 0em;
-    font-family: "Roboto Medium";
+    font-family: 'Titillium Web', sans-serif;
+    /*font-family: 'Play', sans-serif;*/
 }
 
 /* Formatting for the Timing Tower */
@@ -28,9 +29,16 @@ body{
 }
 
 /* Get rid of lap times if the res is too small*/
-/*Screen Width of 180+ will always show lap times*/
+/*Screen Width of 200+ will always show lap times*/
 @media only screen and (max-width: 179px) {
     .lapTimeCollapse{
+        display: none;
+    }
+}
+
+/* Get rid of team colour strips if the screen size falls below a value*/
+@media only screen and (max-width: 115px) {
+    .teamColourCollapse{
         display: none;
     }
 }

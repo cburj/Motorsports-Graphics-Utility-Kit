@@ -12,11 +12,42 @@ $view->driverDataSet = $driverDataSet->fetchAllDrivers();
 $position = 1;
 $teamClass = "teamUnknown";
 
+/*
+    Function to map teams names to the respective colours
+    - This will at some point need refactoring into some kind of lookup table,
+      that can be customized via a single (JSON?) file.
+*/
+function getTeamColour($input)
+{
+    switch($input){
+        case "mercedes":
+            return "teamTurq";
+        case "ferrari":
+            return "teamRed";
+        case "redbull":
+            return "teamDarkBlue";
+        case "mclaren":
+            return "teamOrange";
+        case "renault":
+            return "teamYellow";
+        case "haas":
+            return "teamGold";
+        case "alfaromeo":
+            return "teamDarkRed";
+        case "alphatauri":
+            return "teamWhite";
+        case "williams":
+            return "teamLightBlue";
+        case "racingpoint":
+            return "teamPink";
+        default:
+            return "teamUnknown";
+    }
+}
+
 /* This is the script where we get all of the data for the timing
    tower. We only return the data if something has changed since
    the last time we queries the table.*/
-
-
 foreach ($view->driverDataSet as $driverData) {
     if($position==1){
         echo '<tr class="fastestLapHighlight">';
@@ -24,7 +55,7 @@ foreach ($view->driverDataSet as $driverData) {
     else
         echo '<tr class="">';
     echo '<td><span>' . $position .'</span></td>';
-    echo '<td class="">' . $driverData->getDriverAbv() . '</td>';
+    echo '<td class=""><span class="' . getTeamColour($driverData->getDriverTeam()) . ' teamColourCollapse">▮</span> ' . $driverData->getDriverAbv() . '</td>';
     /*this needs to be implemented properly at some point, just a placeholder for styling atm*/
     $rawDateTime = $driverData->getDriverLastupdate();
     $createDate = new DateTime($rawDateTime);
@@ -33,4 +64,3 @@ foreach ($view->driverDataSet as $driverData) {
     echo '</tr>';
     $position = $position +1;
 }
-?>
