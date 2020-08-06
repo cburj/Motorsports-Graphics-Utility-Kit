@@ -13,7 +13,7 @@ class DriverDataSet {
 
     public function fetchAllDrivers() {
         /*temporarily order by last update*/
-        $sqlQuery = 'SELECT * FROM drivers ORDER BY driver_lastupdate DESC';
+        $sqlQuery = 'SELECT * FROM drivers ORDER BY driver_position ASC';
 
         $statement = $this->_dbHandle->prepare($sqlQuery); // prepare a PDO statement
         $statement->execute(); // execute the PDO statement

@@ -50,10 +50,10 @@ function getTeamColour($input)
    the last time we queries the table.*/
 foreach ($view->driverDataSet as $driverData) {
     if($position==1){
-        echo '<tr class="fastestLapHighlight">';
+        echo '<tr class="fastestLapHighlight" id="jstest" draggable="true">';
     }
     else
-        echo '<tr class="">';
+        echo '<tr class="" draggable="true">';
     echo '<td><span>' . $position .'</span></td>';
     echo '<td class=""><span class="' . getTeamColour($driverData->getDriverTeam()) . ' teamColourCollapse">▮</span> ' . $driverData->getDriverAbv() . '</td>';
     /*this needs to be implemented properly at some point, just a placeholder for styling atm*/
