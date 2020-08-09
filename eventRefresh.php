@@ -10,7 +10,5 @@ $view->eventDataSet = $eventDataSet->fetchAllEvents();
 
 foreach ($view->eventDataSet as $eventData) {
     /*echo '<tr class="' . $eventData->getEventFlagcolour() . 'Flag">';*/
-    echo '<tr class="greenFlag"></tr>';
-    echo '<th colspan="100%" id="ttBranding"><i class="fas fa-flag"></i></th>';
-    echo '</tr>';
+    echo '<th colspan="100%" class="' . $eventData->getEventFlagcolour() . 'Flag" id="ttBranding"><i class="fas fa-flag"></i></th>';
 }

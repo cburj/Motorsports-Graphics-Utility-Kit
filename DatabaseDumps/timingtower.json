@@ -21,7 +21,8 @@
                 "driver_team": "renault",
                 "driver_tyre": "S",
                 "driver_lastupdate": "2020-08-03 19:50:18",
-                "driver_position": "1"
+                "driver_position": "1",
+                "driver_laps": "27"
             },
             {
                 "driver_id": "4",
@@ -31,7 +32,8 @@
                 "driver_team": "mclaren",
                 "driver_tyre": "M",
                 "driver_lastupdate": "2020-08-03 19:42:34",
-                "driver_position": "2"
+                "driver_position": "2",
+                "driver_laps": "0"
             },
             {
                 "driver_id": "5",
@@ -41,7 +43,8 @@
                 "driver_team": "ferrari",
                 "driver_tyre": "M",
                 "driver_lastupdate": "2020-08-03 19:26:04",
-                "driver_position": "3"
+                "driver_position": "3",
+                "driver_laps": "0"
             },
             {
                 "driver_id": "6",
@@ -51,7 +54,8 @@
                 "driver_team": "williams",
                 "driver_tyre": "M",
                 "driver_lastupdate": "0000-00-00 00:00:00",
-                "driver_position": "4"
+                "driver_position": "4",
+                "driver_laps": "0"
             },
             {
                 "driver_id": "7",
@@ -61,7 +65,8 @@
                 "driver_team": "alfaromeo",
                 "driver_tyre": "M",
                 "driver_lastupdate": "0000-00-00 00:00:00",
-                "driver_position": "5"
+                "driver_position": "5",
+                "driver_laps": "0"
             },
             {
                 "driver_id": "8",
@@ -71,7 +76,8 @@
                 "driver_team": "haas",
                 "driver_tyre": "M",
                 "driver_lastupdate": "0000-00-00 00:00:00",
-                "driver_position": "6"
+                "driver_position": "6",
+                "driver_laps": "0"
             },
             {
                 "driver_id": "10",
@@ -81,7 +87,8 @@
                 "driver_team": "alphatauri",
                 "driver_tyre": "M",
                 "driver_lastupdate": "0000-00-00 00:00:00",
-                "driver_position": "7"
+                "driver_position": "7",
+                "driver_laps": "0"
             },
             {
                 "driver_id": "11",
@@ -91,7 +98,8 @@
                 "driver_team": "racingpoint",
                 "driver_tyre": "M",
                 "driver_lastupdate": "2020-08-03 19:42:27",
-                "driver_position": "8"
+                "driver_position": "8",
+                "driver_laps": "0"
             },
             {
                 "driver_id": "16",
@@ -101,7 +109,8 @@
                 "driver_team": "ferrari",
                 "driver_tyre": "M",
                 "driver_lastupdate": "2020-08-03 19:33:42",
-                "driver_position": "9"
+                "driver_position": "9",
+                "driver_laps": "0"
             },
             {
                 "driver_id": "18",
@@ -111,7 +120,8 @@
                 "driver_team": "racingpoint",
                 "driver_tyre": "M",
                 "driver_lastupdate": "0000-00-00 00:00:00",
-                "driver_position": "10"
+                "driver_position": "10",
+                "driver_laps": "0"
             },
             {
                 "driver_id": "20",
@@ -121,7 +131,8 @@
                 "driver_team": "haas",
                 "driver_tyre": "M",
                 "driver_lastupdate": "0000-00-00 00:00:00",
-                "driver_position": "11"
+                "driver_position": "11",
+                "driver_laps": "0"
             },
             {
                 "driver_id": "23",
@@ -131,7 +142,8 @@
                 "driver_team": "redbull",
                 "driver_tyre": "M",
                 "driver_lastupdate": "2020-08-03 19:03:01",
-                "driver_position": "12"
+                "driver_position": "12",
+                "driver_laps": "0"
             },
             {
                 "driver_id": "26",
@@ -141,7 +153,8 @@
                 "driver_team": "alphatauri",
                 "driver_tyre": "M",
                 "driver_lastupdate": "0000-00-00 00:00:00",
-                "driver_position": "13"
+                "driver_position": "13",
+                "driver_laps": "0"
             },
             {
                 "driver_id": "31",
@@ -151,7 +164,8 @@
                 "driver_team": "renault",
                 "driver_tyre": "M",
                 "driver_lastupdate": "0000-00-00 00:00:00",
-                "driver_position": "14"
+                "driver_position": "14",
+                "driver_laps": "0"
             },
             {
                 "driver_id": "33",
@@ -161,7 +175,8 @@
                 "driver_team": "redbull",
                 "driver_tyre": "M",
                 "driver_lastupdate": "2020-08-03 19:30:29",
-                "driver_position": "15"
+                "driver_position": "15",
+                "driver_laps": "0"
             },
             {
                 "driver_id": "44",
@@ -171,7 +186,8 @@
                 "driver_team": "mercedes",
                 "driver_tyre": "M",
                 "driver_lastupdate": "2020-08-03 19:32:30",
-                "driver_position": "16"
+                "driver_position": "16",
+                "driver_laps": "0"
             },
             {
                 "driver_id": "55",
@@ -181,7 +197,8 @@
                 "driver_team": "mclaren",
                 "driver_tyre": "M",
                 "driver_lastupdate": "0000-00-00 00:00:00",
-                "driver_position": "17"
+                "driver_position": "17",
+                "driver_laps": "0"
             },
             {
                 "driver_id": "63",
@@ -191,7 +208,8 @@
                 "driver_team": "williams",
                 "driver_tyre": "M",
                 "driver_lastupdate": "0000-00-00 00:00:00",
-                "driver_position": "18"
+                "driver_position": "18",
+                "driver_laps": "0"
             },
             {
                 "driver_id": "77",
@@ -201,7 +219,8 @@
                 "driver_team": "mercedes",
                 "driver_tyre": "M",
                 "driver_lastupdate": "2020-08-04 17:42:36",
-                "driver_position": "19"
+                "driver_position": "19",
+                "driver_laps": "0"
             },
             {
                 "driver_id": "99",
@@ -211,7 +230,21 @@
                 "driver_team": "alfaromeo",
                 "driver_tyre": "M",
                 "driver_lastupdate": "0000-00-00 00:00:00",
-                "driver_position": "20"
+                "driver_position": "20",
+                "driver_laps": "0"
+            }
+        ]
+    },
+    {
+        "type": "table",
+        "name": "events",
+        "database": "timingtower",
+        "data": [
+            {
+                "event_id": "0",
+                "event_flagcolour": "green",
+                "event_reason": "The tracks is clear, racing can proceed.",
+                "event_lastupdate": "2020-08-04 00:00:00"
             }
         ]
     }

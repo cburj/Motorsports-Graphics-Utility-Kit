@@ -19,16 +19,11 @@
                        setInterval(function () {
                            $("#towerReloadElement").load("towerRefresh.php");
                        },1000);
+                        setInterval(function () {
+                            $("#flagReloadElement").load("eventRefresh.php");
+                        },2000);
                     });
                 </script>
-                <!--<script>
-                    $(document).ready(function ()
-                    {
-                       setInterval(function () {
-                           $("#flagReloadElement").load("eventRefresh.php");
-                       },1000);
-                    });
-                </script>-->
                 <!-- AJAX Script to fresh tower every second -->
 
 
@@ -45,18 +40,26 @@
 
                     <!-- Session Name/Laps/Timers -->
                     <!-- Flags/Warnings, only show 1 at a time! -->
-                    <div id="flagReloadElement">
+                    <!--<script>
+                        $(document).ready(function ()
+                        {
+                            setInterval(function () {
+                                $("#flagReloadElement").load("eventRefresh.php");
+                            },1000);
+                        });
+                    </script>-->
+                    <tr id="flagReloadElement">
 
-                    </div>
-                    <!--<tr class="redFlag">
-                        <th colspan="100%" id="ttBranding"><i class="fas fa-flag"></i></th>
+                    </tr>
+                    <!--<tr class="">
+                        <th colspan="100%" class="redFlag" id="ttBranding"><i class="fas fa-flag"></i></th>
                     </tr>-->
                     <!--<tr class="yellowFlag">
                         <th colspan="100%" id="ttBranding"><i class="fas fa-flag"></i></th>
                     </tr>-->
-                    <tr class="greenFlag">
+                    <!--<tr class="greenFlag">
                         <th colspan="100%" id="ttBranding"><i class="fas fa-flag"></i></th>
-                    </tr>
+                    </tr>-->
                     <!--<tr class="">
                         <th colspan="100%" id="ttBranding"><i class="fas fa-flag-checkered"></i></th>
                     </tr>-->

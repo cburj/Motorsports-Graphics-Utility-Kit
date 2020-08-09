@@ -1,9 +1,0 @@
-[
-{"type":"header","version":"5.0.1","comment":"Export to JSON plugin for PHPMyAdmin"},
-{"type":"database","name":"timingtower"},
-{"type":"table","name":"events","database":"timingtower","data":
-[
-{"event_id":"0","event_flagcolour":"red","event_reason":"The tracks is clear, racing can proceed.","event_lastupdate":"2020-08-04 00:00:00"}
-]
-}
-]

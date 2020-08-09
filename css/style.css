@@ -118,6 +118,13 @@ body{
     color: #0f6fb7;
 }
 
+.chequeredFlag{
+    background-image: url("/img/chequeredFlag.gif");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
 .yellowFlag {
     animation-name: yellowFlagAnimate;
     animation-duration: 2s;

@@ -50,7 +50,7 @@ function getTeamColour($input)
    the last time we queries the table.*/
 foreach ($view->driverDataSet as $driverData) {
     if($position==1){
-        echo '<tr class="fastestLapHighlight" id="jstest" draggable="true">';
+        echo '<tr class="fastestLapHighlight" id="" draggable="true">';
     }
     else
         echo '<tr class="" draggable="true">';
