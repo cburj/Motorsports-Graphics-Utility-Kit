@@ -63,6 +63,16 @@ body{
     }
 }
 
+.ttHeaderLeaderboard{
+    text-align: center;
+}
+
+.ttHeaderLeaderboard tr {
+    line-height: 0.5em;
+    min-height: 0.5em;
+    height: 0.5em;
+}
+
 /* Colours for all teams */
 .teamTurq{
     color: #00ddc2;
@@ -96,6 +106,46 @@ body{
 }
 .teamUnknown{
     color: #ffffff;
+}
+
+.teamTurqBG{
+    background-color: #00ddc2;
+}
+.teamRedBG{
+    background-color: #ff0f00;
+}
+.teamDarkBlueBG{
+    background-color: rgba(49, 98, 255);
+}
+.teamYellowBG{
+    background-color: #eaea00;
+}
+.teamOrangeBG{
+    background-color: #ff7e00;
+}
+.teamWhiteBG{
+    background-color: white;
+}
+.teamDarkRedBG{
+    background-color: #de0000;
+}
+.teamLightBlueBG{
+    background-color: rgb(90, 189, 255);
+}
+.teamPinkBG{
+    background-color: #ff8ac0;
+}
+.teamGoldBG{
+    background-color: #cea048;
+}
+.teamUnknownBG{
+    background-color: #ffffff;
+}
+
+.vertLarge{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2em;
 }
 
 .fastestLapHighlight{
