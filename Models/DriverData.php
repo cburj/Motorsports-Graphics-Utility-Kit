@@ -2,7 +2,7 @@
 
 class DriverData {
 
-    protected $_driver_id, $_driver_fname, $_driver_lname, $_driver_abv, $_driver_team, $_driver_tyre, $_driver_lastupdate, $_driver_position;
+    protected $_driver_id, $_driver_fname, $_driver_lname, $_driver_abv, $_driver_team, $_driver_tyre, $_driver_lastupdate, $_driver_position, $_driver_laptimehighlight;
 
     public function __construct($dbRow){
         $this->_driver_id = $dbRow['driver_id'];
@@ -13,6 +13,15 @@ class DriverData {
         $this->_driver_tyre = $dbRow['driver_tyre'];
         $this->_driver_lastupdate = $dbRow['driver_lastupdate'];
         $this->_driver_position = $dbRow['driver_position'];
+        $this->_driver_laptimehighlight = $dbRow['driver_laptimehighlight'];
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDriverLaptimehighlight()
+    {
+        return $this->_driver_laptimehighlight;
     }
 
     /**

@@ -50,9 +50,9 @@ function getTeamColour($input)
 /* maxDrivers/minDrivers can actually be changed on-the-fly, right here during a stream, allowing
    you to manually select teh range of drivers to show*/
 
-/*I WOULD ONLY RECOMMEND SHOWING A MAXIMUM OF 7 DRIVERS UNTIL SCROLLING IS COMPLETED*/
+/*I WOULD ONLY RECOMMEND SHOWING A MAXIMUM OF 6 DRIVERS UNTIL SCROLLING IS COMPLETED*/
 $minDrivers = 1;
-$maxDrivers = 7;
+$maxDrivers = 6;
 $count = 1;
 
 /* First 'For-Each' is responsible for outputting the position number and driver name.*/
@@ -74,7 +74,7 @@ foreach ($view->driverDataSet as $driverData) {
     if(($count <= $maxDrivers) && ($count >= $minDrivers)){
         echo '<th class="' . getTeamColour($driverData->getDriverTeam()) . 'BG">' . $driverData->getDriverId() . '</th>';
         echo '<th class="">' . strtoupper($driverData->getDriverTeam()) . '</th>';
-        echo '<th class="">1:19.592</th>';
+        echo '<th class="">' . $driverData->getDriverLaptimehighlight() . '</th>';
     }
     $count++;
 }

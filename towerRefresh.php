@@ -56,11 +56,7 @@ foreach ($view->driverDataSet as $driverData) {
         echo '<tr class="" draggable="true">';
     echo '<td><span>' . $position .'</span></td>';
     echo '<td class=""><span class="' . getTeamColour($driverData->getDriverTeam()) . ' teamColourCollapse">▮</span> ' . $driverData->getDriverAbv() . '</td>';
-    /*this needs to be implemented properly at some point, just a placeholder for styling atm*/
-    $rawDateTime = $driverData->getDriverLastupdate();
-    $createDate = new DateTime($rawDateTime);
-    $stripDateTime = $createDate->format('H:i:s');
-    echo '<td class="lapTimeCollapse">' . $stripDateTime . '</td>';
+    echo '<td class="lapTimeCollapse">' . $driverData->getDriverLaptimehighlight() . '</td>';
     echo '<td class="tyreCollapse tyre' . $driverData->getDriverTyre() . '">' . $driverData->getDriverTyre() . '</td>';
     /* Will come back to this once i figure out how to keep the image within the height of the row*/
     /*echo '<td class="tyreCollapse"><img src="img/tyres/' . $driverData->getDriverTyre() . '.svg"></td>';*/
