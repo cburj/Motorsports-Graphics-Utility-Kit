@@ -73,6 +73,10 @@ body{
     height: 0.5em;
 }
 
+.tickerDriverName{
+    font-weight: bold;
+}
+
 /* Colours for all teams */
 .teamTurq{
     color: #00ddc2;
