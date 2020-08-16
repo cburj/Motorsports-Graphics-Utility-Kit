@@ -110,42 +110,65 @@ body{
 
 .teamTurqBG{
     background-color: #00ddc2;
+    color: black;
+    font-weight: bold;
 }
 .teamRedBG{
     background-color: #ff0f00;
+    color: black;
+    font-weight: bold;
 }
 .teamDarkBlueBG{
-    background-color: rgba(49, 98, 255);
+    background-color: rgb(49, 98, 255);
+    color: black;
+    font-weight: bold;
 }
 .teamYellowBG{
     background-color: #eaea00;
+    color: black;
+    font-weight: bold;
 }
 .teamOrangeBG{
     background-color: #ff7e00;
+    color: black;
+    font-weight: bold;
 }
 .teamWhiteBG{
     background-color: white;
+    color: black;
+    font-weight: bold;
 }
 .teamDarkRedBG{
     background-color: #de0000;
+    color: black;
+    font-weight: bold;
 }
 .teamLightBlueBG{
     background-color: rgb(90, 189, 255);
+    color: black;
+    font-weight: bold;
 }
 .teamPinkBG{
     background-color: #ff8ac0;
+    color: black;
+    font-weight: bold;
 }
 .teamGoldBG{
     background-color: #cea048;
+    color: black;
+    font-weight: bold;
 }
 .teamUnknownBG{
     background-color: #ffffff;
+    color: black;
+    font-weight: bold;
 }
 
 .vertLarge{
     font-weight: bold;
     font-style: italic;
     font-size: 2em;
+    background: rgba(0, 0, 0, 0.25);
 }
 
 .fastestLapHighlight{
