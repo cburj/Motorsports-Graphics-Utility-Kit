@@ -1,0 +1,28 @@
+<?php require('template/header.phtml') ?>
+
+    <!--MAIN CONTENT-->
+                <!--Main Timing Tower-->
+
+                <?php
+                    /* First time the page loads, we need to get set the last
+                       Db change date/time to now, otherwise data will not load */
+                    $_SESSION['dbChange'] = date('Y-m-d H:i:s');
+                ?>
+
+                <!-- AJAX Script to fresh tower every second -->
+                <!-- Performance wise this is bad as we are requesting the data once a second even if nothing
+                has changed, should be okay for 20 drivers, but the more you add its going to increase cpu time -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script>
+                    $(document).ready(function ()
+                    {
+                       setInterval(function () {
+                           $("#").load("eventDetailRefresh.php");
+                       },10000);
+                    });
+                </script>
+                <!-- AJAX Script to fresh tower every second -->
+
+                <!--Main Timing Tower-->
+    <!--MAIN CONTENT-->
+<?php require('template/footer.phtml') ?>

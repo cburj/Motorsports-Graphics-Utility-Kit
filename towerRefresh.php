@@ -53,7 +53,7 @@ foreach ($view->driverDataSet as $driverData) {
         echo '<tr class="fastestLapHighlight" id="" draggable="true">';
     }
     else
-        echo '<tr class="" draggable="true">';
+    echo '<tr class="" draggable="true">';
     echo '<td><span>' . $position .'</span></td>';
     echo '<td class=""><span class="' . getTeamColour($driverData->getDriverTeam()) . ' teamColourCollapse">▮</span> ' . $driverData->getDriverAbv() . '</td>';
     echo '<td class="lapTimeCollapse">' . $driverData->getDriverLaptimehighlight() . '</td>';
