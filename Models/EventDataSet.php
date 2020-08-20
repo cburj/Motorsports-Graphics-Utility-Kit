@@ -11,9 +11,9 @@ class EventDataSet {
         $this->_dbHandle = $this->_dbInstance->getdbConnection();
     }
 
-    public function fetchAllEvents() {
+    public function fetchLastEvent() {
         /*Order by last update*/
-        $sqlQuery = 'SELECT * FROM events ORDER BY event_lastupdate DESC';
+        $sqlQuery = 'SELECT * FROM events ORDER BY event_lastupdate DESC LIMIT 1';
 
         $statement = $this->_dbHandle->prepare($sqlQuery); // prepare a PDO statement
         $statement->execute(); // execute the PDO statement

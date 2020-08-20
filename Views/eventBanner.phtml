@@ -1,0 +1,22 @@
+<?php require('template/header.phtml') ?>
+
+    <!--MAIN CONTENT-->
+    <!--Main Timing Tower-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function ()
+        {
+            setInterval(function () {
+                $("#bannerReloadElement").load("eventBannerRefresh.php");
+            },10000);
+        });
+    </script>
+    <!-- AJAX Script to fresh tower every 10 seconds, then only show any new event. -->
+    <!--Main Timing Tower-->
+    <?php
+        $_SESSION['last_update'] = '';
+    ?>
+    <div class="banner-container" id="bannerReloadElement">
+    </div>
+    <!--MAIN CONTENT-->
+<?php require('template/footer.phtml') ?>

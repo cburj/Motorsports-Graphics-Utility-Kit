@@ -26,7 +26,6 @@ body{
 .ttCustomTable{
     /*opacity: 0.5;*/
     line-height: .05em;
-    border-radius: .5em;
 }
 
 #ttBranding{
@@ -45,6 +44,8 @@ body{
 }
 
 /*Styling for Event banner*/
+/*Styling for Event banner*/
+/*Styling for Event banner*/
 .banner-container {
     font-size: 2em;
     margin: 0 auto;
@@ -59,8 +60,17 @@ body{
     color: white;
     font-weight: bold;
     text-align: center;
-    background-color: orangered;
 }
+
+/*Flag Colours*/
+.greenFlagEvent{background-color: green;color: white;}
+.yellowFlagEvent{background-color: yellow;color: black;}
+.redFlagEvent{background-color: darkred;color: white;}
+.orangeFlagEvent{background-color: orangered;color: white;}
+.blackFlagEvent{background-color: black;color: red;}
+/*Flag Colours*/
+
+
 /*Flag/Event Reason (description) Column*/
 .banner-col-6 {
     flex-basis: 75%;
@@ -82,6 +92,8 @@ body{
     animation: 0.5s ease-out 0s 1 slideInFromLeft;
     padding: 30px;
 }
+/*Styling for Event banner*/
+/*Styling for Event banner*/
 /*Styling for Event banner*/
 
 /* Get rid of lap times if the res is too small*/
