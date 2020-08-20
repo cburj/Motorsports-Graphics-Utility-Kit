@@ -44,6 +44,46 @@ body{
     padding-right: 1em;
 }
 
+/*Styling for Event banner*/
+.banner-container {
+    font-size: 2em;
+    margin: 0 auto;
+    display: flex;
+}
+.banner-col {
+    padding: 1em;
+}
+/*Flag/Event Type Column*/
+.banner-col-3 {
+    flex-basis: 25%;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: orangered;
+}
+/*Flag/Event Reason (description) Column*/
+.banner-col-6 {
+    flex-basis: 75%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75); !important;
+}
+
+/*WIP SLIDE TRANSITION*/
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.bannerSlide{
+    /* This section calls the slideInFromLeft animation we defined above */
+    animation: 0.5s ease-out 0s 1 slideInFromLeft;
+    padding: 30px;
+}
+/*Styling for Event banner*/
+
 /* Get rid of lap times if the res is too small*/
 /*Screen Width of 200+ will always show lap times*/
 @media only screen and (max-width: 230px) {
